@@ -42,6 +42,7 @@
 <li><strong>WhatsApp calls (optional, off by default):</strong> if you turn on "Calls from other apps", NoForget reads only WhatsApp's call notifications, on your phone, to count those calls.</li>
 <li><strong>Errands, places, settings and reminder history.</strong></li>
 <li><strong>Your precise location:</strong> used on your phone to notice when you arrive at a place. Your exact location is only sent when you name your current spot: "Use current location", or confirming a map pin at the position the map opened on.</li>
+<li><strong>Driving and walking (optional, off by default):</strong> if you turn on "Detect driving and walking", Google Play services on your phone works out whether you are driving, walking or still and tells NoForget when that changes. NoForget keeps only the latest reading and when it came, on your phone, to hold place reminders to a quiet notice while you drive and to check for places less often while you are still. NoForget never sends it anywhere, and it is not part of the backup. Turning the switch off deletes it.</li>
 </ul>
 
 <h2>Backup to your Google account (optional, off by default)</h2>
@@ -51,7 +52,7 @@
 <p>If you turn on "Quick add with on-device AI" in Settings, you can type a reminder in one sentence and your phone's own AI (Gemini Nano, through Google's ML Kit) fills in the reminder for you to check before saving. What you type is read on your phone and is not sent anywhere; a place it names is then searched like any place search (see above). While Quick add is on, Google's ML Kit sends Google diagnostics and usage data: device and app information, a per-installation identifier and error codes, as described in <a href="https://developers.google.com/ml-kit/android-data-disclosure">Google's ML Kit data disclosure</a>. Google says it does not pass this data to third parties. If you never turn it on, ML Kit does not run and sends nothing. Turning it off stops ML Kit; diagnostics it had already queued may still be sent.</p>
 
 <h2>Permissions</h2>
-<p>NoForget asks for each permission when a feature needs it: location (including in the background, so arrival reminders work while the app is closed), call log, contacts, notifications, and optionally notification access for WhatsApp calls. Background location, call log and notification access each come with an explanation first. NoForget keeps working without a permission where it can, and you can revoke any of them in Android settings.</p>
+<p>NoForget asks for each permission when a feature needs it: location (including in the background, so arrival reminders work while the app is closed), call log, contacts, notifications, optionally notification access for WhatsApp calls, and optionally physical activity for driving and walking detection (asked only if you turn it on). Background location, call log, notification access and physical activity each come with an explanation first. NoForget keeps working without a permission where it can, and you can revoke any of them in Android settings.</p>
 
 <h2>Sharing, selling and children</h2>
 <p>NoForget does not sell or share your data, show ads, or use analytics or crash-reporting services of its own; with Quick add on, Google's ML Kit sends Google the diagnostics described above. It is not directed at children.</p>
